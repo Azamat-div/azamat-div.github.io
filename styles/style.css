@@ -1,0 +1,496 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 25px;
+}
+.header-img {
+  background-image: url(../images/pasaric.png);
+  background-size: cover;
+  height: 500px;
+}
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 68.5%;
+}
+.header-nav {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  gap: 80px;
+}
+.header-nav a {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgb(94, 122, 71);
+  text-decoration: none;
+}
+.button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  gap: 10px;
+  cursor: pointer;
+}
+.header-avatar {
+  position: absolute;
+  width: auto;
+  height: 385px;
+  right: 320px;
+  top: 60px;
+}
+.scription {
+  color: rgb(62, 62, 62);
+  position: absolute;
+  max-width: 223px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  right: 130px;
+  top: 120px;
+}
+.title {
+  color: rgb(62, 62, 62);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 120px;
+  margin-bottom: 5px;
+}
+.description {
+  color: rgb(94, 122, 71);
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 110%;
+  text-transform: uppercase;
+  max-width: 510px;
+  margin: 0;
+}
+.specialization {
+  background: rgb(165, 188, 147);
+  position: relative;
+  height: 300px;
+  bottom: 56px;
+}
+.specialization-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.specialization-block-window {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 281px;
+  height: 220px;
+  margin-top: 40px;
+}
+.specialization-block-title {
+  color: rgb(94, 122, 71);
+  max-width: 170px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 110%;
+  padding-left: 30px;
+  padding-top: 120px;
+}
+.skills {
+  position: relative;
+  margin-bottom: 90px;
+}
+.skills-item {
+  display: flex;
+  gap: 240px;
+}
+.skills-items {
+  display: block;
+}
+.skills-title {
+  color: rgb(62, 62, 62);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 50px;
+}
+.skills-tool {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 70px;
+}
+.skills-description {
+  color: rgb(62, 62, 62);
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  top: 10px;
+  left: 15px;
+}
+.skills-underline {
+  position: absolute;
+  width: 182px;
+  height: 15px;
+  left: 250px;
+  margin-top: 70px;
+}
+.skills-word {
+  color: rgb(62, 62, 62);
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 140px;
+  left: 90px;
+}
+.skills-elipse {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 1px solid rgb(165, 188, 147);
+}
+.skills-avatar {
+  position: absolute;
+  width: 400px;
+  height: 470px;
+  right: -5px;
+  bottom: 150px;
+}
+.portfolio {
+  background: rgb(165, 188, 147);
+  position: relative;
+  height: 800px;
+  margin-bottom: 70px;
+}
+.portfolio-title {
+  padding-top: 85px;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 70px;
+}
+.portfolio-window-item {
+  display: flex;
+  gap: 15px;
+}
+.portfolio-window {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 375px;
+  height: 500px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer-title {
+  color: rgb(94, 122, 71);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 20px;
+}
+.footer-description {
+  color: rgb(62, 62, 62);
+  max-width: 425px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.footer-button {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+
+  border-radius: 5px;
+  border: transparent;
+  background: rgb(94, 122, 71);
+  position: absolute;
+  width: 281px;
+  height: 92px;
+  right: 150px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+/* Media */
+
+@media (max-width: 1280px) {
+  .header-nav {
+    gap: max(3vw, 90px);
+  }
+  .header-nav a {
+    margin-left: 0px;
+    font-size: max(2vw, 20px);
+  }
+  .header-avatar {
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    right: 130px;
+    top: 50px;
+  }
+  .header-title {
+    position: absolute;
+    left: 70px;
+    margin-top: -40px;
+    margin-bottom: 0px;
+  }
+  .header-title .scription {
+    display: none;
+  }
+  .title {
+    font-size: max(2vw, 20px);
+  }
+  .description {
+    font-size: max(6vw, 40px);
+  }
+}
+@media (max-width: 1080px) {
+  .header-nav {
+    margin-left: 10px;
+    gap: max(3vw, 90px);
+  }
+  .header-nav a {
+    margin-left: 10px;
+    font-size: max(2vw, 20px);
+  }
+  .header-avatar {
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    right: 60px;
+    top: 50px;
+  }
+  .header-title {
+    position: absolute;
+    left: 10px;
+  }
+  .header-title .scription {
+    display: none;
+  }
+  .title {
+    font-size: max(2vw, 20px);
+  }
+  .description {
+    font-size: max(6vw, 40px);
+  }
+}
+@media (max-width: 978px) {
+  .header-avatar {
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    right: 40px;
+    top: 50px;
+  }
+}
+@media (max-width: 888px) {
+  .header-avatar {
+    position: absolute;
+    width: 400px;
+    height: 390px;
+    right: 10px;
+    top: 50px;
+  }
+  .description {
+    font-size: max(5vw, 50px);
+  }
+}
+@media (max-width: 820px) {
+  .header-avatar {
+    position: absolute;
+    width: 400px;
+    height: 390px;
+    right: 10px;
+    top: 50px;
+  }
+  .description {
+    font-size: max(5vw, 48px);
+  }
+}
+@media (max-width: 778px) {
+  .header-avatar {
+    position: absolute;
+    width: 380px;
+    height: 360px;
+    right: 10px;
+    top: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  .header-avatar {
+    position: absolute;
+    width: 380px;
+    height: 360px;
+    right: 10px;
+    top: 90px;
+  }
+  .scription {
+    display: none;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 40px;
+  }
+  .button {
+    display: none;
+  }
+}
+@media (max-width: 738px) {
+  .header-avatar {
+    position: absolute;
+    width: 360px;
+    height: 340px;
+    right: 10px;
+    top: 110px;
+  }
+}
+@media (max-width: 588px) {
+  .header-avatar {
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    right: 10px;
+    top: 150px;
+  }
+}
+@media (max-width: 569px) {
+  .header-avatar {
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    right: 10px;
+    top: 150px;
+  }
+  .header-title {
+    position: absolute;
+    left: 10px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+  .title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .description {
+    left: 10px;
+    font-size: 34px;
+    max-width: 410px;
+  }
+  .header-title .scription {
+    left: 0px;
+    display: table;
+  }
+}
+@media (max-width: 566px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .header-avatar {
+    width: 330px;
+    height: 310px;
+    right: 10px;
+    top: 140px;
+  }
+  .header-title .scription {
+    left: 0px;
+    display: table;
+  }
+}
+@media (max-width: 498px) {
+  .header-avatar {
+    width: 310px;
+    height: 290px;
+    right: 10px;
+    top: 160px;
+  }
+}
+@media (max-width: 456px) {
+  .header-avatar {
+    display: none;
+  }
+  .header-title {
+    left: 30px;
+  }
+  .title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .description {
+    left: 10px;
+    font-size: 36px;
+    max-width: 410px;
+  }
+  .header-img {
+    height: 390px;
+  }
+}
+@media (max-width: 360px) {
+  .header-avatar {
+    display: none;
+  }
+  .header-title {
+    left: 30px;
+  }
+  .header-img {
+    height: 390px;
+  }
+  .header-title .scription {
+    font-size: min(5vw, 17px);
+    display: table;
+  }
+  .title {
+    font-size: min(5vw, 16px);
+  }
+  .description {
+    font-size: min(13vw, 30px);
+    max-width: 410px;
+  }
+}
+@media (max-width: 320px) {
+  .header-avatar {
+    display: none;
+  }
+  .header-title {
+    left: 20px;
+  }
+  .header-img {
+    height: 390px;
+  }
+  .header-title .scription {
+    font-size: max(5vw, 17px);
+    display: table;
+  }
+  .title {
+    font-size: min(5vw, 16px);
+  }
+  .description {
+    font-size: min(13vw, 30px);
+    max-width: 410px;
+  }
+}
